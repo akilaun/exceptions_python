@@ -1,3 +1,5 @@
+# Args recebe uma infinidade de argumentos
+
 def imprimir_bairros(*bairros):
     for bairro in bairros:
         print(f"Bairro: {bairro}")

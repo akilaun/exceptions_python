@@ -1,10 +1,7 @@
 #Definindo Função
 def calcular_gasto(**kwargs):
-    distancia = kwargs.get("distancia")
-    media_km_veiculo = kwargs.get("media_km_veiculo")
-    valor_combustivel = kwargs.get("valor_combustivel")
-    qtd_litros = (distancia / media_km_veiculo)
-    valor_gasto = (valor_combustivel * qtd_litros)
+    qtd_litros = (kwargs.get("distancia") / kwargs.get("media_km_veiculo"))
+    valor_gasto = (kwargs.get("valor_combustivel") * qtd_litros)
     tipo_de_combustivel = kwargs.get("tipo_de_combustivel")
     cidade_saida = kwargs.get("cidade_saida")
     cidade_destino = kwargs.get("cidade_destino")
@@ -13,8 +10,7 @@ def calcular_gasto(**kwargs):
         f"\n ##### RESUMO DA VIAGEM #####"
         f"\n SAÍDA:{cidade_saida}\n",
         f"DESTINO:{cidade_destino}\n",
-        f"Consumo do Veículo: {media_km_veiculo}\n",
-        f"\nVocê irá gastar R${valor_gasto:.2f} e \n{qtd_litros:.2f}L de {tipo_de_combustivel}\n"
+        f"\nVocê irá gastar R${valor_gasto:.2f} e {qtd_litros:.2f}L de {tipo_de_combustivel}\n"
     )
 
 #Insert de dados

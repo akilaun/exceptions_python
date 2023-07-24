@@ -1,0 +1,26 @@
+def calcula_viagem(km, valor_comb, media_veiculo):
+    qtde_litros = km / media_veiculo
+    total = qtde_litros * valor_comb
+    print(f"Vai gastar R$ {total:.2f}")
+
+
+def calcula_idade(ano_atual, ano_nascimento):
+    idade = ano_atual - ano_nascimento
+    print(f"Você tem {idade} anos")
+
+try:
+    ano_hoje = int(input("Digite o ano atual: "))
+    ano_nasc = int(input("Digite seu ano de nascimento: "))
+    calcula_idade(ano_hoje,ano_nasc)
+except Exception as er:
+    print(f"Parabens, você conseguiu errar, ", er)
+    
+
+try:
+    kilometros = int(input("Digite a distancia em km: "))
+    valor = float(input("Digite o valor do combustivel: "))
+    media = int(input("Digite a media do veículo: "))
+    calcula_viagem(kilometros, valor, media)
+except Exception as erro:
+    print(f"Ocorreu um erro {erro}")
+
