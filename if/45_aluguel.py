@@ -1,9 +1,11 @@
 """
+Tentativa de passar raiva!
+
 Você precisa alugar um carro e a empresa está com duas promoções conforme as tabelas abaixo:
 
 ----------Promoção por diária------------
 PERIODO                 VALOR_DIARIA      
-De 2 até 5 dias       R$ 105,00
+De 2 até 5 dias      R$ 105,00
 De 6 até 15 dias     R$ 95,00
 De 16 até 25 dias    R$ 70,00
 Acima de 25 dias     R$ 60,00
@@ -27,16 +29,30 @@ Total kilometros ?, valor gasto ?
 
 Recomendamos usar o plano por ? :)
 """
-import calculos 
 
-nome = input("Qual seu nome: ")
-dias = int(input("Insira o total de dias: "))
-km = int(input("Insira o total de km a ser rodado: "))
+import calculos
 
-total_km = calculos.calcular_kilometro(km)
-total_diaria = calculos.calcular_valor_por_diarias(dias)
+nome = str(input("Digite o seu nome: "))
+km = float(input("Insira a distancia em km: "))
+dia = int(input("insira o total de dias que usará o carro: "))
 
-if total_km < total_diaria:
-    print("KM")
-if total_diaria < total_km:
-    print("DIARIA")
+total_km = calculos.aluguel_por_kilometro(km)
+total_dias = calculos.aluguel_por_dia(dia)
+diferenca_km = total_dias - total_km
+diferenca_dias = total_km - total_dias
+
+
+if total_km < total_dias:
+    print(
+        f"Olá {nome}, espero que você esteja bem."
+        "\nA melhor opção é o aluguel por Kilometros!"
+        f"\nTotal a ser gasto: R${total_km:.2f}, uma economia de R${diferenca_km:.2f}."
+        f"\nPor dia ficaria: R${total_dias:.2f}."
+          )
+else:
+    print(
+        f"Olá {nome}, espero que você esteja bem."
+        "\nA melhor opção é o aluguel por dias rodados!"
+        f"\nTotal a ser gasto: R${total_dias:.2f}, uma diferença de R${diferenca_dias:.2f}."
+        f"\nPor km ficaria: R${total_km:.2f}."
+          )
