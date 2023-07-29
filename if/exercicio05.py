@@ -41,27 +41,24 @@ kwh_consumido = float(input("Insira o consumdo mensal de energia em Kw/h: "))
 
 #Lógica para calculo do tipo de instalação:
 if tipo_de_instalacao == 'R' or tipo_de_instalacao == 'r':
-    valor_da_fatura = residencia(kwh_consumido)
-    valor_a_pagar = valor_da_fatura
+    valor_a_pagar = residencia(kwh_consumido)
     print(
         f"\nSua instalação foi identificada como {tipo_de_instalacao} - RESIDENCIA.\n"
         f"O Valor a ser pago será de R${valor_a_pagar:.2f}\n"
         )
 
 elif tipo_de_instalacao == 'C' or tipo_de_instalacao == 'c':
-    valor_da_fatura = comercio(kwh_consumido)
-    valor_a_pagar = valor_da_fatura
+    valor_a_pagar = comercio(kwh_consumido)
     print(
         f"\nSua instalação foi identificada como {tipo_de_instalacao} - COMERCIO.\n"
         f"O Valor a ser pago será de R${valor_a_pagar:.2f}\n"
         )
 
 elif tipo_de_instalacao == 'I' or tipo_de_instalacao == 'i' :
-    valor_da_fatura = industria(kwh_consumido)
-    valor_a_pagar = valor_da_fatura
+    valor_a_pagar = industria(kwh_consumido)
     print(
         f"\nSua instalação foi identificada como {tipo_de_instalacao} - IDUSTRIA.\n"
         f"O Valor a ser pago será de R${valor_a_pagar:.2f}\n"
         )
 else:
-    print("Instalação não identificada")
+    print("Tipo de instalação não mapeadas")
