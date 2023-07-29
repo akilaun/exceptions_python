@@ -28,3 +28,15 @@ def aluguel_por_kilometro(kilometros):
     if kilometros > 6000:
         valor_por_km = 2.99
     return total_por_km
+
+
+
+def aumento_salarial(salario_atual):
+    porcentagem = 0.0
+    ajuste = salario_atual * porcentagem
+    salario_novo = salario_atual + ajuste
+    if salario_atual > 1350:
+        porcentagem = 0.1
+    else:
+        porcentagem = 0.15
+    return salario_novo
