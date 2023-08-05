@@ -24,7 +24,7 @@ with open(arquivo_csv, mode='w', newline='') as file:
     writer = csv.writer(file)
 
     # Escrevendo o cabeçalho (opcional)
-    writer.writerow(['Dezena 1', 'Dezena 2', 'Dezena 3', 'Dezena 4', 'Dezena 5', 'Dezena 6'])
+    writer.writerow(['concurso','Dezena 1', 'Dezena 2', 'Dezena 3', 'Dezena 4', 'Dezena 5', 'Dezena 6'])
 
     # Loop para iterar pelos concursos
     for concurso in tqdm(range(1, ultimo_concurso + 1), desc='Buscando resultados'):
