@@ -36,3 +36,7 @@ with open(arquivo_csv, mode='w', newline='') as file:
         writer.writerow([concurso] + dezenas)
 
 print(f"Os resultados das dezenas foram salvos no arquivo: {arquivo_csv}")
+
+
+
+
