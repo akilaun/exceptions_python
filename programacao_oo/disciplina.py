@@ -11,3 +11,4 @@ class Disciplina:
     
     def atribuir_curso(self, nome_curso):
         self.curso = nome_curso
+
