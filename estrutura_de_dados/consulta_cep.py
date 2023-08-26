@@ -4,7 +4,7 @@ Buscar os dados de endereço do usuário conforme o cep informado via input de d
 import requests
 import json
 
-cep = int(input("Digit o seu CEP, somente numeros: "))
+cep = int(input("Digite o seu CEP, somente numeros: "))
 url = f"https://viacep.com.br/ws/{cep}/json"
 
 endereco = requests.get(url).json()
