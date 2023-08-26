@@ -1,6 +1,6 @@
 import csv
 
-nome_arquivo = "temperaturas.csv"
+nome_arquivo = "arquivos/temperaturas.csv"
 cabeçalho = ["DIA DA SEMANA", "TEMPERATURA"]
 dados = [
     {"dia": "segunda-feira", "temperatura": 29.6},
