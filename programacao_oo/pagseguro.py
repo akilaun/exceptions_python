@@ -16,18 +16,20 @@ class PagSeguro:
         valor_parcela = self.valor / qtde_parcelas
         return valor_parcela
     
-    def comprovante(self, qtde_parcelas, valor_parcelas):
+    def comprovante(self, qtde_parcelas, valor_parcela):
         print("\n")
 
         if self.operacao == "D":
-            print(f"Comprovante de venda \n"
-                  f"Operação Débito\n"
-                  f"{locale.currency(self.valor)}")
+            self.info_comprovante = (f"Comprovante de venda\n"
+                                     f"Operação Débito\n"
+                                     f"R$ {self.valor:.2f}")
         elif self.operacao == "C":
-            print(f"Comprovante de venda\n"
-                  f"Operação Crédito\n"
-                  f"{locale.currency(self.valor)}\n"
-                  f"{qtde_parcelas} X sem juros de {locale.currency(valor_parcelas)}")
+            self.info_comprovante = (f"Comprovante de venda\n"
+                                     f"Operação Crédito\n"
+                                     f"R$ {self.valor}\n"
+                                     f"{qtde_parcelas} X "
+                                     f"sem juros de R$ {valor_parcela:.2f}")
+        print(self.info_comprovante)
 
     def gerar_qrcode(self):
         nome_arquivo = self.transacao_id + ".png"
