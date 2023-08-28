@@ -1,0 +1,9 @@
+DISCIPLINA,ALUNO,NOTA1,NOTA2,MEDIA
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Matematica,Aluno01,5.89,7.1,6.49
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Matematica,Aluno02,6.9,9.9,8.4
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Matematica,Aluno03,3.6,8.78,6.19
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Matematica,Aluno04,2.78,7.4,5.09
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Geografia,Aluno01,6.12,3.12,4.62
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Geografia,Aluno02,9.43,4.67,7.05
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Geografia,Aluno03,7.31,4.9,6.11
+"['DISCIPLINA', 'ALUNO', 'NOTA1', 'NOTA2', 'MEDIA']",Geografia,Aluno04,4.12,1.23,2.67
